@@ -3,6 +3,17 @@ from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
+import pycountry
+
+# Función para obtener el nombre completo del país a partir de su abreviatura
+def get_country_name(country_code):
+    try:
+        country = pycountry.countries.get(alpha_2=country_code)
+        return country.name
+    except AttributeError:
+        return None
+
+
 
 # Leer los datos
 df = pd.read_csv('Tarea 1/Salaries.csv')
@@ -89,8 +100,32 @@ def create_chart(question,df=df):
         # Cambiar valores en y
         fig.update_yaxes(ticktext=types, tickvals=[0, 1, 2, 3])
 
-        
         description = "Al examinar los datos recopilados y representarlos visualmente, observamos que, en promedio, los empleados a tiempo parcial tienen el salario más alto, seguido por los empleados con contrato, los empleados a tiempo completo y, por último, los empleados autónomos o freelancers, que tienen el salario promedio más bajo. Este hallazgo sugiere que ciertos tipos de empleo tienden a ofrecer salarios más altos que otros. Específicamente, los empleados a tiempo parcial parecen disfrutar de salarios más altos en promedio en comparación con aquellos empleados a tiempo completo, por contrato o autónomos."
+    # Disparidades salariales regionales
+    elif question == 4:
+        df = df.groupby('company_location')['salary_in_usd'].mean().reset_index()
+        df['company_location'] = df['company_location'].astype(str)
+
+        df['company_location'] = df['company_location'].apply(lambda x: get_country_name(x))
+
+        title = 'Promedio de salario en USD por región'
+        x_label = 'Región'
+        y_label = 'Salario en USD'
+        color = 'rgb(69,69,69)'
+        fig = go.Figure(data=go.Choropleth(
+            locations=df['company_location'],
+            z = df['salary_in_usd'],
+            locationmode = 'country names',
+            colorscale = 'greys',
+            marker_line_color='darkgray',
+            marker_line_width=0.5,
+            colorbar_title = "Salario en USD",
+        ))
+
+        # Modificar el color del área de trazado para blanco
+        fig.update_layout(plot_bgcolor=background_color)
+
+        description = "Al analizar los salarios promedio en USD por región, encontramos que los salarios varían significativamente entre diferentes regiones. En general, los profesionales en Rusia, USA, Canada y Australia destacan por tener los salarios promedio más altos en comparación con otros países. Por otro lado, los salarios promedio en India, Brasil y México son relativamente más bajos en comparación con otros países. Estas disparidades salariales regionales pueden estar influenciadas por factores económicos, políticos y culturales específicos de cada región, así como por la demanda y la oferta de profesionales en el campo de Ciencia de Datos."
 
     else:
         return None, None, None, None, None, None
@@ -110,7 +145,8 @@ app.layout = html.Div([
         options=[
             {'label': '1. Tendencias salariales a lo largo del tiempo', 'value': 1},
             {'label': '2. Disparidades salariales entre niveles de experiencia', 'value': 2},
-            {'label': '3. Impacto del tipo de empleo en los salarios', 'value': 3}
+            {'label': '3. Impacto del tipo de empleo en los salarios', 'value': 3},
+            {'label': '4. Disparidades salariales regionales', 'value': 4}
             # Agregar más opciones según sea necesario
         ],
         value=1,  # Pregunta predeterminada
