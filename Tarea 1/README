@@ -1,0 +1,38 @@
+# Tarea 1: Salalrios en el mundo de la Ciencia de Datos
+
+## Integrantes
+- José Pinto
+- Vicente Ruiz
+
+## Instrucciones de uso
+
+### Requisitos
+- Python 3.7 o superior
+- pip
+- Archivo de datos "Salaries.csv" en la carpeta "Tarea 1"
+
+### Instrucciones
+
+Antes de correr index.py, instale las librerías necesarias con el siguiente comando:
+
+```bash
+pip install pandas
+pip install dash
+pip install html
+pip install plotly
+pip install pycountry
+```
+
+Para correr el programa, ejecute el siguiente comando:
+```bash
+python index.py
+```
+
+El programa se ejecutará en el puerto 8050, por lo que puede acceder a él a través de la siguiente URL:
+```bash
+http://localhost:8050/
+```
+
+## Descripción del programa
+
+
