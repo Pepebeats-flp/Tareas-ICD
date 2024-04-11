@@ -102,6 +102,7 @@ def p3(question,df=df):
 
     return fig, x_label, y_label, title, color, description
 
+#Función para responder a la pregunta 4
 def p4(question,df=df):
     company = df.groupby('company_location')['salary_in_usd'].mean().reset_index()
     employee = df.groupby('employee_residence')['salary_in_usd'].mean().reset_index()
@@ -132,8 +133,8 @@ def p4(question,df=df):
     description = "Al analizar los salarios promedio en USD por región, encontramos que los salarios varían significativamente entre diferentes regiones. En general, los profesionales en Rusia, USA, Canada y Australia destacan por tener los salarios promedio más altos en comparación con otros países. Por otro lado, los salarios promedio en India, Brasil y México son relativamente más bajos en comparación con otros países. Estas disparidades salariales regionales pueden estar influenciadas por factores económicos, políticos y culturales específicos de cada región, así como por la demanda y la oferta de profesionales en el campo de Ciencia de Datos."
     return fig, x_label, y_label, title, color, description
 
+#función para responder a la pregunta 5
 def p5(question,df=df):
-    df = df[['remote_ratio', 'salary_in_usd']]
     df['remote_ratio'] = df['remote_ratio'].map({0: 'No Remoto', 50: 'Mixto', 100: 'Remoto Total'})
     title = 'Promedio de salario en USD por tipo de trabajo remoto'
     x_label = 'Tipo de trabajo remoto'
@@ -157,12 +158,50 @@ def p5(question,df=df):
     fig.update_traces(box_visible=False, meanline_visible=True)
     fig.update_traces(meanline_color='rgb(69,69,69)', meanline_width=2)
 
+
+
     description = "Al analizar los datos, encontramos que los que trabajan de forma mixta son los que menos ganan en promedio, seguidos por los que trabajan de forma presencial y los que trabajan de forma remota total. Este hallazgo sugiere que el trabajo remoto puede tener un impacto significativo en los salarios de los profesionales en el campo de la Ciencia de Datos. Los profesionales que trabajan de forma remota total tienden a tener salarios más altos en promedio en comparación con aquellos que trabajan de forma mixta o presencial, lo que puede reflejar la flexibilidad y la demanda de habilidades especializadas en el campo de la Ciencia de Datos."
 
     return fig, x_label, y_label, title, color, description
 
 
 ### Seguir creando funciones para las preguntas restantes...
+
+
+# Funcion para responder la pregunta 8
+def p8(question,df=df):
+    # Análisis de conversión de moneda
+    ''' Evalúe el impacto de las fluctuaciones monetarias en los salarios de la ciencia de datos comparando los salarios en diferentes monedas con sus valores equivalentes en USD. Identifique cualquier diferencia significativa en los niveles salariales después de la conversión de moneda.
+    '''
+    # Comparamos salary_currency con salary_in_usd grafico de barras
+    df = df.groupby('salary_currency')['salary_in_usd'].mean().reset_index()
+    df['salary_currency'] = df['salary_currency'].astype(str)
+
+    title = 'Promedio de salario en USD por moneda'
+    x_label = 'Moneda'
+    y_label = 'Salario en USD'
+    color = 'rgb(69,69,69)'
+    fig = px.bar(df, x='salary_currency', y='salary_in_usd')
+
+    # asignar valor en la barra
+    fig.update_traces(text=round(df['salary_in_usd']), textposition='outside')
+
+    # Modificar el color
+    fig.update_traces(marker_color=color)
+    # Modificar el color del área de trazado para blanco
+    fig.update_layout(plot_bgcolor=background_color)
+    # Cambiar leyenda x
+    fig.update_layout(xaxis_title=x_label)
+    # Cambiar leyenda y
+    fig.update_layout(yaxis_title=y_label)
+
+    description= "Podemos notar que los promedios de sueldos más altos son los de las monedas USD (Dolar), CHF (Franco Suizo) y SGD (Dolar de Singapur), mientras que los promedios más bajos son los de las monedas BRL (Real Brasileño), MXN (Peso Mexicano) y TRY (Lira Turca). Esto puede deberse a la fortaleza de la economía de los países que utilizan estas monedas, así como a la demanda de profesionales en el campo de la Ciencia de Datos en estos países."
+    return fig, x_label, y_label, title, color, description
+
+
+# Funcion para responder la pregunta 9
+def p9(question,df=df):
+    return None, None, None, None, None, None
 
 
 # Función para crear el gráfico
@@ -172,6 +211,8 @@ def create_chart(question,df=df):
     elif question == 3: fig, x_label, y_label, title, color, description = p3(question)
     elif question == 4: fig, x_label, y_label, title, color, description = p4(question)
     elif question == 5: fig, x_label, y_label, title, color, description = p5(question)
+    elif question == 8: fig, x_label, y_label, title, color, description = p8(question)
+    elif question == 9: fig, x_label, y_label, title, color, description = p9(question)
     # Agregar más opciones según sea necesario
     else:
         return None, None, None, None, None, None
@@ -194,7 +235,9 @@ app.layout = html.Div([
             {'label': '2. Disparidades salariales entre niveles de experiencia', 'value': 2},
             {'label': '3. Impacto del tipo de empleo en los salarios', 'value': 3},
             {'label': '4. Disparidades salariales regionales', 'value': 4},
-            {'label': '5. Trabajo Remoto y Salario', 'value': 5}
+            {'label': '5. Trabajo Remoto y Salario', 'value': 5},
+            {'label': '8. Análisis de conversión de moneda', 'value': 8},
+            {'label': '9. Análisis de satisfacción salarial', 'value': 9},
             # Agregar más opciones según sea necesario
         ],
         value=1,  # Pregunta predeterminada
