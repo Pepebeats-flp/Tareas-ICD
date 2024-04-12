@@ -6,6 +6,9 @@
 
 ## Instrucciones de uso
 
+Notar que todas las instrucciones van destinadas a un ambiente unix, probadas
+especificamente en wsl2 con Ubuntu 22.04.3 LTS, en caso de correr en otros ambientes
+puede consider python en vez de python3 en los comandos de terminal.
 ### Requisitos
 - Python 3.7 o superior
 - pip
@@ -13,26 +16,31 @@
 
 ### Instrucciones
 
-Antes de correr index.py, instale las librerías necesarias con el siguiente comando:
+Antes de correr index.py cree un ambiente virtual con venv e intale el requirements.txt:
 
-```bash
-pip install pandas
-pip install dash
-pip install html
-pip install plotly
-pip install pycountry
-```
+Comandos útiles:
+- Crear ambiente virtual venv
+python<version> -m venv <virtual-environment-name>
+python3 -m venv env
+
+- Instalat virtualev (venv)
+pip install virtualenv
+
+- Activar ambiente virtual de nombre env.
+source env/bin/activate
+
+- Desactivar ambiente virutal
+deactivate
+
+- Una vez activado el ambiente, instalar el requirements.txt
+pip install -r requirements.txt
 
 Para correr el programa, ejecute el siguiente comando:
 ```bash
-python index.py
+python3 index.py
 ```
 
 El programa se ejecutará en el puerto 8050, por lo que puede acceder a él a través de la siguiente URL:
 ```bash
 http://localhost:8050/
 ```
-
-## Descripción del programa
-
-

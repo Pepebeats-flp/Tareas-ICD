@@ -15,7 +15,7 @@ def get_country_name(country_code):
 
 
 # Leer el conjunto de datos
-df = pd.read_csv('Tarea 1/Salaries.csv')
+df = pd.read_csv('Salaries.csv')
 
 # Establecer el estilo de la aplicación
 font_family = 'Monaco'
@@ -33,12 +33,12 @@ def p1(question,df=df):
     y_label = 'Salario en USD'
     color = 'rgb(69,69,69)'
     fig = px.line(df, x='work_year', y='salary_in_usd')
-    
+
     # Modificar el color
     fig.update_traces(line_color=color, mode='lines+markers', marker_color=color, marker_size=10)
     # Modificar el color del área de trazado para blanco
     fig.update_layout(plot_bgcolor=background_color)
-    # Cambiar leyenda x 
+    # Cambiar leyenda x
     fig.update_layout(xaxis_title=x_label)
     # Cambiar leyenda y
     fig.update_layout(yaxis_title=y_label)
@@ -167,6 +167,37 @@ def p5(question,df=df):
 
 ### Seguir creando funciones para las preguntas restantes...
 
+def p6(question, df=df):
+    sueldo_promedio_groupby = df.groupby("company_size")["salary_in_usd"].mean()
+    # fig = px.scatter(sueldo_promedio_groupby, size="pop")
+    fig = go.Figure(data=[go.Scatter(
+        x=sueldo_promedio_groupby.index, y=sueldo_promedio_groupby,
+        mode='markers',
+        marker=dict(
+            color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
+                   'rgb(44, 160, 101)'],
+            opacity=[1, 0.8, 0.6],
+            size=[df[df.company_size == "L"].count()[0]/2, df[df.company_size == "M"].count()[0]/2,df[df.company_size == "S"].count()[0]/2],
+            )
+        )])
+    x_label = "tamaño de la empresa"
+    y_label = "sueldo en dolares"
+    title = "Sueldo promedio en dolares de cientistas de datos según el tamaño de empresa"
+    color = 'rgb(69,69,69)'
+    description= "Se puede observar que los cientistas de datos que trabajan en empresas de mediano o gran tamaño tienen un sueldo promedio en dolares bastante similar, observando un incremento de menos de tres mil dolares al año al incrementar el tamaño de la empresa. No obstante el cambio desde una empresa pequeña a una mediana significa en promedio un incremento de casi cuarenta mil dolares al año"
+    return fig, x_label, y_label, title, color, description
+
+def p7(question,df=df):
+    # Comparamos salary_currency con salary_in_usd grafico de barras
+    data = df.groupby("job_title")["salary_in_usd"].mean()
+    data.sort_values(ascending=False, inplace=True)
+    title = 'Salario promedio por titulo laboral'
+    x_label = 'Titulo Laboral'
+    y_label = 'Salario en USD'
+    color = 'rgb(69,69,69)'
+    fig = px.scatter(data)
+    description= "Se puede observar que los titulos con salarios mas altos son Data Analytics Lead y Financial Data Analyst, por otro lado los puestos con menor remuneracion promedio anual en dolares son Product Data Analyst y Computer Vision Engineer."
+    return fig, x_label, y_label, title, color, description
 
 # Funcion para responder la pregunta 8
 def p8(question,df=df):
@@ -201,9 +232,35 @@ def p8(question,df=df):
 
 # Funcion para responder la pregunta 9
 def p9(question,df=df):
-    return None, None, None, None, None, None
+    df = df[(df["employment_type"] == "FT") & (df["remote_ratio"] == 50)].copy()
+    df.sort_values(by="salary_in_usd", ascending=False, inplace=True)
+
+    title = 'Satisfacción Laboral'
+    x_label = 'Titulo Laboral'
+    y_label = 'Salario en USD'
+    color = 'rgb(69,69,69)'
+
+    fig = px.sunburst(df, path=['company_size', 'experience_level', 'job_title'], values='salary_in_usd')
+    description= "Para considerar la satisfacción laboral de los cientistas de datos se consideran primero ciertos criterios predeterminados. Se filtran los datos por los trabajos que ofrecen un 50% de asistencia remota y bajo un contrato full time, dado que estas condiciones permiten un balance entre certeza financiera y relación trabajo-ocio para los trabajadores. Una vez aplicado el filtro se desagregan los datos según el tamaño de la empresa, la experiencia solicitada para los cargos y la acumulación de los salarios para brindar una mejor perspectiva de los trabajos que cumplen con estas condiciones y cuanto dinero invierten las empresas según su tamaño y la experiencia del trabajador a estas oportunidades."
+    return fig, x_label, y_label, title, color, description
 
 
+def p10(question,df=df):
+    df = df.groupby(["company_size", "remote_ratio"]).count()
+    df = df["Unnamed: 0"].copy()
+    df2 = df.reset_index()
+    df2['company_size'] = df2['company_size']
+    df2["count"] = df2["Unnamed: 0"]
+    df2.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+    title = 'Relación entre trabajo remoto y tamaño de la empresa'
+    x_label = 'Titulo Laboral'
+    y_label = 'Salario en USD'
+    color = 'rgb(69,69,69)'
+
+    fig = px.treemap(df2, path=['company_size', 'remote_ratio'], values='count')
+    description= "Se observa la relación entre el tamaño de la empresa y la cantidad de trabajo remoto. En todo tamaño de empresa lidera el trabajo cien por ciento remoto, ocupando un mayor área del gráfico. Notar que en las empresas de tamaño mediano se encuentra una menor porporción de trabajo híbrido, donde es más común el trabajo o completamente remoto o completamenre presencial para los trabajos relacionados a la ciencia de datos."
+    return fig, x_label, y_label, title, color, description
 # Función para crear el gráfico
 def create_chart(question,df=df):
     if question == 1: fig, x_label, y_label, title, color, description = p1(question)
@@ -211,12 +268,15 @@ def create_chart(question,df=df):
     elif question == 3: fig, x_label, y_label, title, color, description = p3(question)
     elif question == 4: fig, x_label, y_label, title, color, description = p4(question)
     elif question == 5: fig, x_label, y_label, title, color, description = p5(question)
+    elif question == 6: fig, x_label, y_label, title, color, description = p6(question)
+    elif question == 7: fig, x_label, y_label, title, color, description = p7(question)
     elif question == 8: fig, x_label, y_label, title, color, description = p8(question)
     elif question == 9: fig, x_label, y_label, title, color, description = p9(question)
+    elif question == 10: fig, x_label, y_label, title, color, description = p10(question)
     # Agregar más opciones según sea necesario
     else:
         return None, None, None, None, None, None
-    
+
     fig.update_layout(font_family=font_family)
     return fig, x_label, y_label, title, color, description
 
@@ -226,7 +286,7 @@ app = Dash(__name__)
 # Layout de la aplicación
 app.layout = html.Div([
     html.H1(children='Salarios en Ciencia de Datos', style={'textAlign': 'center', 'font-family': font_family, 'color': text_color, 'font-size': title_size}),
-    
+
     # Dropdown para seleccionar la pregunta
     dcc.Dropdown(
         id='question-dropdown',
@@ -236,15 +296,18 @@ app.layout = html.Div([
             {'label': '3. Impacto del tipo de empleo en los salarios', 'value': 3},
             {'label': '4. Disparidades salariales regionales', 'value': 4},
             {'label': '5. Trabajo Remoto y Salario', 'value': 5},
+            {'label': '6. Tamaño de la empresa y salario', 'value': 6},
+            {'label': '7. Títulos de trabajo y salario', 'value': 7},
             {'label': '8. Análisis de conversión de moneda', 'value': 8},
             {'label': '9. Análisis de satisfacción salarial', 'value': 9},
+            {'label': '10. Disparidades salariales regionales', 'value':10},
             # Agregar más opciones según sea necesario
         ],
         value=1,  # Pregunta predeterminada
         clearable=False,
         style={'width': '80%', 'margin': 'auto', 'font-family': font_family, 'color': text_color}
     ),
-    
+
     # Div para mostrar el gráfico
     html.Div(id='graph-container'),
 ],style={'padding-left': '15%', 'padding-right': '15%'})
