@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c231987c77b1462a4a2561664111261 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0c231987c77b1462a4a2561664111261" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0c231987c77b1462a4a2561664111261 = L.map(
+                "map_0c231987c77b1462a4a2561664111261",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c748e8ad9433d7f1c993493f152d5e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8c748e8ad9433d7f1c993493f152d5e2.addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+            var marker_5522ccbf0957631b223a3728380fbdd3 = L.marker(
+                [34.0474, -118.3666],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_4e4056f241b50a11737faf3cfcc7bc2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9b7abfb5c2cfaf41b994f024e7b8948 = $(`<div id="html_a9b7abfb5c2cfaf41b994f024e7b8948" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_4e4056f241b50a11737faf3cfcc7bc2d.setContent(html_a9b7abfb5c2cfaf41b994f024e7b8948);
+            
+        
+
+        marker_5522ccbf0957631b223a3728380fbdd3.bindPopup(popup_4e4056f241b50a11737faf3cfcc7bc2d)
+        ;
+
+        
+    
+    
+            var marker_4d89c14a89020bd296b541a3f98c5c07 = L.marker(
+                [34.04, -118.4393],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_68af3239a25c745a339384025c2d3352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54871af64e5df1f9e3c526b68aed6c40 = $(`<div id="html_54871af64e5df1f9e3c526b68aed6c40" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_68af3239a25c745a339384025c2d3352.setContent(html_54871af64e5df1f9e3c526b68aed6c40);
+            
+        
+
+        marker_4d89c14a89020bd296b541a3f98c5c07.bindPopup(popup_68af3239a25c745a339384025c2d3352)
+        ;
+
+        
+    
+    
+            var marker_2ccaaa7f75b0d74f89da93179f07b51e = L.marker(
+                [33.8142, -118.3054],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_219816b2954828d4f9393a56ae51f5af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4574d385be582783cd20e96c5ed0fe7a = $(`<div id="html_4574d385be582783cd20e96c5ed0fe7a" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_219816b2954828d4f9393a56ae51f5af.setContent(html_4574d385be582783cd20e96c5ed0fe7a);
+            
+        
+
+        marker_2ccaaa7f75b0d74f89da93179f07b51e.bindPopup(popup_219816b2954828d4f9393a56ae51f5af)
+        ;
+
+        
+    
+    
+            var marker_8c92562611004459368cd3675fc860e8 = L.marker(
+                [34.0588, -118.3419],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_d08e71292e91d48696af6deadc2a4ccf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42d4b1f070c37aa6632f500439021454 = $(`<div id="html_42d4b1f070c37aa6632f500439021454" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_d08e71292e91d48696af6deadc2a4ccf.setContent(html_42d4b1f070c37aa6632f500439021454);
+            
+        
+
+        marker_8c92562611004459368cd3675fc860e8.bindPopup(popup_d08e71292e91d48696af6deadc2a4ccf)
+        ;
+
+        
+    
+    
+            var marker_ec292c7133dcf50328c2b800bf6c459f = L.marker(
+                [34.1046, -118.3489],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_fc02b271d757e47bd5745f6959efacd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dd3985f45885a4d9a0d9cd03d43dfb5 = $(`<div id="html_4dd3985f45885a4d9a0d9cd03d43dfb5" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_fc02b271d757e47bd5745f6959efacd4.setContent(html_4dd3985f45885a4d9a0d9cd03d43dfb5);
+            
+        
+
+        marker_ec292c7133dcf50328c2b800bf6c459f.bindPopup(popup_fc02b271d757e47bd5745f6959efacd4)
+        ;
+
+        
+    
+    
+            var marker_3681711d8880eb9b272b3f213f969f5d = L.marker(
+                [34.0628, -118.2822],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_c956cb50e23ad400b3d2052eb27c5ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f30f6975234775c193f5b0601a7dfc = $(`<div id="html_37f30f6975234775c193f5b0601a7dfc" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_c956cb50e23ad400b3d2052eb27c5ed7.setContent(html_37f30f6975234775c193f5b0601a7dfc);
+            
+        
+
+        marker_3681711d8880eb9b272b3f213f969f5d.bindPopup(popup_c956cb50e23ad400b3d2052eb27c5ed7)
+        ;
+
+        
+    
+    
+            var marker_c2c26be1d147ecb84ba439b183beb402 = L.marker(
+                [34.0252, -118.4014],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_01cefb95d176fcd877a5dd176a7a5154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4897a46e0e024db6849d0debd79a180 = $(`<div id="html_a4897a46e0e024db6849d0debd79a180" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_01cefb95d176fcd877a5dd176a7a5154.setContent(html_a4897a46e0e024db6849d0debd79a180);
+            
+        
+
+        marker_c2c26be1d147ecb84ba439b183beb402.bindPopup(popup_01cefb95d176fcd877a5dd176a7a5154)
+        ;
+
+        
+    
+    
+            var marker_a2f269789a9e2544e556367e390e3ffe = L.marker(
+                [34.0908, -118.3113],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_23fd4d24d5d13ba43d6044fd5f5c4cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ffa54212a8d972977b64292498141ba = $(`<div id="html_9ffa54212a8d972977b64292498141ba" style="width: 100.0%; height: 100.0%;">THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD</div>`)[0];
+                popup_23fd4d24d5d13ba43d6044fd5f5c4cf4.setContent(html_9ffa54212a8d972977b64292498141ba);
+            
+        
+
+        marker_a2f269789a9e2544e556367e390e3ffe.bindPopup(popup_23fd4d24d5d13ba43d6044fd5f5c4cf4)
+        ;
+
+        
+    
+    
+            var marker_646dabf5921a47beed083ce3d6f433e5 = L.marker(
+                [34.0602, -118.3009],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_7669eb96fcd700b8e37682b9411db0d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_267ea09546e5344862c53c0d59356482 = $(`<div id="html_267ea09546e5344862c53c0d59356482" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_7669eb96fcd700b8e37682b9411db0d2.setContent(html_267ea09546e5344862c53c0d59356482);
+            
+        
+
+        marker_646dabf5921a47beed083ce3d6f433e5.bindPopup(popup_7669eb96fcd700b8e37682b9411db0d2)
+        ;
+
+        
+    
+    
+            var marker_ce330ce376d6eec63a2048b0d7ffea2b = L.marker(
+                [34.1039, -118.3297],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_273ed8f6920f12cb38a22444a937449a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe3f18aaa0e74c66118f0f7015c0e1a7 = $(`<div id="html_fe3f18aaa0e74c66118f0f7015c0e1a7" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_273ed8f6920f12cb38a22444a937449a.setContent(html_fe3f18aaa0e74c66118f0f7015c0e1a7);
+            
+        
+
+        marker_ce330ce376d6eec63a2048b0d7ffea2b.bindPopup(popup_273ed8f6920f12cb38a22444a937449a)
+        ;
+
+        
+    
+    
+            var marker_ace899a6f41e9ec2a91abc021d7a8f0d = L.marker(
+                [33.9876, -118.4647],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_4fe6353d4a5e6b4ec7f37a541d493712 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83a884fa58092d05dee968020f92ee69 = $(`<div id="html_83a884fa58092d05dee968020f92ee69" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_4fe6353d4a5e6b4ec7f37a541d493712.setContent(html_83a884fa58092d05dee968020f92ee69);
+            
+        
+
+        marker_ace899a6f41e9ec2a91abc021d7a8f0d.bindPopup(popup_4fe6353d4a5e6b4ec7f37a541d493712)
+        ;
+
+        
+    
+    
+            var marker_2f55fea05d803020783dc91018c49361 = L.marker(
+                [33.9572, -118.3962],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_34fdef35c4d2c2414fb93a296fef348c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25a7269134dcd453329362761c400450 = $(`<div id="html_25a7269134dcd453329362761c400450" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_34fdef35c4d2c2414fb93a296fef348c.setContent(html_25a7269134dcd453329362761c400450);
+            
+        
+
+        marker_2f55fea05d803020783dc91018c49361.bindPopup(popup_34fdef35c4d2c2414fb93a296fef348c)
+        ;
+
+        
+    
+    
+            var marker_73ce2cc83d608f928f3b39e5033298a5 = L.marker(
+                [34.1439, -118.1955],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6d9c0be3f9abd0d438c09d05df874702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_493418b1c80816caafcbd09269d337ba = $(`<div id="html_493418b1c80816caafcbd09269d337ba" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_6d9c0be3f9abd0d438c09d05df874702.setContent(html_493418b1c80816caafcbd09269d337ba);
+            
+        
+
+        marker_73ce2cc83d608f928f3b39e5033298a5.bindPopup(popup_6d9c0be3f9abd0d438c09d05df874702)
+        ;
+
+        
+    
+    
+            var marker_308683bfeb59e7c1bedcb7294e0cba52 = L.marker(
+                [34.1555, -118.6249],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_59318c80a0730f17289bca949a8781e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8166d88fff617db38b1e31df4a891b6b = $(`<div id="html_8166d88fff617db38b1e31df4a891b6b" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - ATTEMPT</div>`)[0];
+                popup_59318c80a0730f17289bca949a8781e5.setContent(html_8166d88fff617db38b1e31df4a891b6b);
+            
+        
+
+        marker_308683bfeb59e7c1bedcb7294e0cba52.bindPopup(popup_59318c80a0730f17289bca949a8781e5)
+        ;
+
+        
+    
+    
+            var marker_37fc82fe19971547c8175ac2637e6610 = L.marker(
+                [34.0722, -118.4528],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_9b722b792b70c036c746acecf8672038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9daf171eef074775f12473ee17aa7392 = $(`<div id="html_9daf171eef074775f12473ee17aa7392" style="width: 100.0%; height: 100.0%;">BUNCO, PETTY THEFT</div>`)[0];
+                popup_9b722b792b70c036c746acecf8672038.setContent(html_9daf171eef074775f12473ee17aa7392);
+            
+        
+
+        marker_37fc82fe19971547c8175ac2637e6610.bindPopup(popup_9b722b792b70c036c746acecf8672038)
+        ;
+
+        
+    
+    
+            var marker_9ed2626713e02ee57faaaafe5d124123 = L.marker(
+                [34.0543, -118.4435],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_64f1371361bc14860c1b3815841bba0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afccc5c3b0aca905ba584ffffb961440 = $(`<div id="html_afccc5c3b0aca905ba584ffffb961440" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_64f1371361bc14860c1b3815841bba0e.setContent(html_afccc5c3b0aca905ba584ffffb961440);
+            
+        
+
+        marker_9ed2626713e02ee57faaaafe5d124123.bindPopup(popup_64f1371361bc14860c1b3815841bba0e)
+        ;
+
+        
+    
+    
+            var marker_7800715985298119c4b475b272b64c8a = L.marker(
+                [33.9914, -118.2897],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_aa0a7aa47edd69468f46d82743af54da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d28f515592be01d0e0e5b8a21a68eda = $(`<div id="html_8d28f515592be01d0e0e5b8a21a68eda" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_aa0a7aa47edd69468f46d82743af54da.setContent(html_8d28f515592be01d0e0e5b8a21a68eda);
+            
+        
+
+        marker_7800715985298119c4b475b272b64c8a.bindPopup(popup_aa0a7aa47edd69468f46d82743af54da)
+        ;
+
+        
+    
+    
+            var marker_b951b10822a7bab605cec9637e2eeab2 = L.marker(
+                [34.2157, -118.4771],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_f36516abd11d7c0a16d71abfd93d96f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d2fdea282dcbe447b1a4cf08e3dfd4f = $(`<div id="html_4d2fdea282dcbe447b1a4cf08e3dfd4f" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_f36516abd11d7c0a16d71abfd93d96f4.setContent(html_4d2fdea282dcbe447b1a4cf08e3dfd4f);
+            
+        
+
+        marker_b951b10822a7bab605cec9637e2eeab2.bindPopup(popup_f36516abd11d7c0a16d71abfd93d96f4)
+        ;
+
+        
+    
+    
+            var marker_533c5d0b3ed8d9a47c75b4c305f6d3c1 = L.marker(
+                [34.2047, -118.6429],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_dff4570ee6130ccfcb2fbd8fc7466578 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd0f706019ed613c26e683b5ca85ad81 = $(`<div id="html_bd0f706019ed613c26e683b5ca85ad81" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)</div>`)[0];
+                popup_dff4570ee6130ccfcb2fbd8fc7466578.setContent(html_bd0f706019ed613c26e683b5ca85ad81);
+            
+        
+
+        marker_533c5d0b3ed8d9a47c75b4c305f6d3c1.bindPopup(popup_dff4570ee6130ccfcb2fbd8fc7466578)
+        ;
+
+        
+    
+    
+            var marker_49053097fe7d68177be5241c8d9ab52b = L.marker(
+                [34.1251, -118.4482],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_9ea1f9095297e4f4a85ba08c75a92a71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71b4c67e92a8eb244af29fe5bac066d4 = $(`<div id="html_71b4c67e92a8eb244af29fe5bac066d4" style="width: 100.0%; height: 100.0%;">OTHER MISCELLANEOUS CRIME</div>`)[0];
+                popup_9ea1f9095297e4f4a85ba08c75a92a71.setContent(html_71b4c67e92a8eb244af29fe5bac066d4);
+            
+        
+
+        marker_49053097fe7d68177be5241c8d9ab52b.bindPopup(popup_9ea1f9095297e4f4a85ba08c75a92a71)
+        ;
+
+        
+    
+    
+            var marker_4a8e54241bae3b2888f7fbd165ae876b = L.marker(
+                [33.9818, -118.3221],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_57ec24a74fc1d6ba2dd6b027385e7dee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d31fabc78e1181dfe2fd216f49e275df = $(`<div id="html_d31fabc78e1181dfe2fd216f49e275df" style="width: 100.0%; height: 100.0%;">INTIMATE PARTNER - AGGRAVATED ASSAULT</div>`)[0];
+                popup_57ec24a74fc1d6ba2dd6b027385e7dee.setContent(html_d31fabc78e1181dfe2fd216f49e275df);
+            
+        
+
+        marker_4a8e54241bae3b2888f7fbd165ae876b.bindPopup(popup_57ec24a74fc1d6ba2dd6b027385e7dee)
+        ;
+
+        
+    
+    
+            var marker_9046f4c3952d3a890834d2893090fce0 = L.marker(
+                [34.2482, -118.5361],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_11c557b7b984fbf43aa95e04ec5ab486 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0507839a791f659216f70ed159623379 = $(`<div id="html_0507839a791f659216f70ed159623379" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_11c557b7b984fbf43aa95e04ec5ab486.setContent(html_0507839a791f659216f70ed159623379);
+            
+        
+
+        marker_9046f4c3952d3a890834d2893090fce0.bindPopup(popup_11c557b7b984fbf43aa95e04ec5ab486)
+        ;
+
+        
+    
+    
+            var marker_7e1cb36d16a6afb1fccd3423fe37e17e = L.marker(
+                [34.0544, -118.3064],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_d856b736007e4534cf78309741b87519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41a6892cb759289fcfd475adb118a7ed = $(`<div id="html_41a6892cb759289fcfd475adb118a7ed" style="width: 100.0%; height: 100.0%;">BUNCO, GRAND THEFT</div>`)[0];
+                popup_d856b736007e4534cf78309741b87519.setContent(html_41a6892cb759289fcfd475adb118a7ed);
+            
+        
+
+        marker_7e1cb36d16a6afb1fccd3423fe37e17e.bindPopup(popup_d856b736007e4534cf78309741b87519)
+        ;
+
+        
+    
+    
+            var marker_06d65494975a391d606fafc0abae131d = L.marker(
+                [34.0446, -118.2507],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_a732064c224854c123ba0d9269dcc51a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edcfdc08370ebe28b621bb57c5c1a271 = $(`<div id="html_edcfdc08370ebe28b621bb57c5c1a271" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_a732064c224854c123ba0d9269dcc51a.setContent(html_edcfdc08370ebe28b621bb57c5c1a271);
+            
+        
+
+        marker_06d65494975a391d606fafc0abae131d.bindPopup(popup_a732064c224854c123ba0d9269dcc51a)
+        ;
+
+        
+    
+    
+            var marker_1f2f1b0fecf68908d1f887c68df815bb = L.marker(
+                [34.0016, -118.2696],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_11f0555fecd7dda3a4cc8f6b54b428b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82cb5d30452b90e2ed9ce31cc920fc28 = $(`<div id="html_82cb5d30452b90e2ed9ce31cc920fc28" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>`)[0];
+                popup_11f0555fecd7dda3a4cc8f6b54b428b0.setContent(html_82cb5d30452b90e2ed9ce31cc920fc28);
+            
+        
+
+        marker_1f2f1b0fecf68908d1f887c68df815bb.bindPopup(popup_11f0555fecd7dda3a4cc8f6b54b428b0)
+        ;
+
+        
+    
+    
+            var marker_ff103d5477f24336cd3cc3eea4ea1d2b = L.marker(
+                [34.2198, -118.4278],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_b4775dc7a7d56ca15f30429a01d9e21a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8548aace62385a5ce2800f32182d3d9 = $(`<div id="html_f8548aace62385a5ce2800f32182d3d9" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_b4775dc7a7d56ca15f30429a01d9e21a.setContent(html_f8548aace62385a5ce2800f32182d3d9);
+            
+        
+
+        marker_ff103d5477f24336cd3cc3eea4ea1d2b.bindPopup(popup_b4775dc7a7d56ca15f30429a01d9e21a)
+        ;
+
+        
+    
+    
+            var marker_32be001260149e42e4319602f5e7cf29 = L.marker(
+                [34.1689, -118.379],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6a5248a54cd53eaab14fdf2a8f041d5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d0aec2abba9c61b4c746e8a51477113 = $(`<div id="html_2d0aec2abba9c61b4c746e8a51477113" style="width: 100.0%; height: 100.0%;">INTIMATE PARTNER - SIMPLE ASSAULT</div>`)[0];
+                popup_6a5248a54cd53eaab14fdf2a8f041d5d.setContent(html_2d0aec2abba9c61b4c746e8a51477113);
+            
+        
+
+        marker_32be001260149e42e4319602f5e7cf29.bindPopup(popup_6a5248a54cd53eaab14fdf2a8f041d5d)
+        ;
+
+        
+    
+    
+            var marker_4126caf9106e3e0cad9ed24cdfb763e0 = L.marker(
+                [34.0506, -118.2449],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_cb67a3fb94b392c10fea69c5a94a2d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0523d819df9b7dabead6ff2a83460771 = $(`<div id="html_0523d819df9b7dabead6ff2a83460771" style="width: 100.0%; height: 100.0%;">VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)</div>`)[0];
+                popup_cb67a3fb94b392c10fea69c5a94a2d05.setContent(html_0523d819df9b7dabead6ff2a83460771);
+            
+        
+
+        marker_4126caf9106e3e0cad9ed24cdfb763e0.bindPopup(popup_cb67a3fb94b392c10fea69c5a94a2d05)
+        ;
+
+        
+    
+    
+            var marker_a938232cb7f334e76103959f6dca634a = L.marker(
+                [34.0964, -118.3471],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_8ecd5009f01e8f3357e6ebf2ed5f638d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ac9c15dba15e8f88f4260352e37922 = $(`<div id="html_c2ac9c15dba15e8f88f4260352e37922" style="width: 100.0%; height: 100.0%;">BRANDISH WEAPON</div>`)[0];
+                popup_8ecd5009f01e8f3357e6ebf2ed5f638d.setContent(html_c2ac9c15dba15e8f88f4260352e37922);
+            
+        
+
+        marker_a938232cb7f334e76103959f6dca634a.bindPopup(popup_8ecd5009f01e8f3357e6ebf2ed5f638d)
+        ;
+
+        
+    
+    
+            var marker_dbacfa2168173bfcc9884af66d5ea6fd = L.marker(
+                [33.9374, -118.2781],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_8acdcccc307ca5ff474a9cdb3a54a446 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71769c2000eac1ab7113b05fedaa3602 = $(`<div id="html_71769c2000eac1ab7113b05fedaa3602" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_8acdcccc307ca5ff474a9cdb3a54a446.setContent(html_71769c2000eac1ab7113b05fedaa3602);
+            
+        
+
+        marker_dbacfa2168173bfcc9884af66d5ea6fd.bindPopup(popup_8acdcccc307ca5ff474a9cdb3a54a446)
+        ;
+
+        
+    
+    
+            var marker_c31dafdb9af8b15891ef7c3c6cda3305 = L.marker(
+                [34.2012, -118.5445],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_c37926cc9025ef3f101f01c3b6d422e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_287a4b28116b90040fe7194d5ad30b16 = $(`<div id="html_287a4b28116b90040fe7194d5ad30b16" style="width: 100.0%; height: 100.0%;">VIOLATION OF COURT ORDER</div>`)[0];
+                popup_c37926cc9025ef3f101f01c3b6d422e9.setContent(html_287a4b28116b90040fe7194d5ad30b16);
+            
+        
+
+        marker_c31dafdb9af8b15891ef7c3c6cda3305.bindPopup(popup_c37926cc9025ef3f101f01c3b6d422e9)
+        ;
+
+        
+    
+    
+            var marker_193ec124a6961136abeec6dbd5d7cf09 = L.marker(
+                [34.1976, -118.6146],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_9014bf1d9e40b23b18bf06667249448d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73d9169c58566e118f22945c15ad7d8a = $(`<div id="html_73d9169c58566e118f22945c15ad7d8a" style="width: 100.0%; height: 100.0%;">VEHICLE - ATTEMPT STOLEN</div>`)[0];
+                popup_9014bf1d9e40b23b18bf06667249448d.setContent(html_73d9169c58566e118f22945c15ad7d8a);
+            
+        
+
+        marker_193ec124a6961136abeec6dbd5d7cf09.bindPopup(popup_9014bf1d9e40b23b18bf06667249448d)
+        ;
+
+        
+    
+    
+            var marker_ec7d89262b24b2a8a267fdb52d37e1af = L.marker(
+                [33.9955, -118.421],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_968d129813aec096008d1a6e72fab528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86b943decd4b442519ff66fba5896dfc = $(`<div id="html_86b943decd4b442519ff66fba5896dfc" style="width: 100.0%; height: 100.0%;">INTIMATE PARTNER - AGGRAVATED ASSAULT</div>`)[0];
+                popup_968d129813aec096008d1a6e72fab528.setContent(html_86b943decd4b442519ff66fba5896dfc);
+            
+        
+
+        marker_ec7d89262b24b2a8a267fdb52d37e1af.bindPopup(popup_968d129813aec096008d1a6e72fab528)
+        ;
+
+        
+    
+    
+            var marker_c6bac79c185ea4f7481f1d1eea5f114a = L.marker(
+                [34.1697, -118.608],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_0195c4cce29339881125dff8506dfb2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f75aff0f341d45b20bcbb8ff779cfb7 = $(`<div id="html_9f75aff0f341d45b20bcbb8ff779cfb7" style="width: 100.0%; height: 100.0%;">EXTORTION</div>`)[0];
+                popup_0195c4cce29339881125dff8506dfb2e.setContent(html_9f75aff0f341d45b20bcbb8ff779cfb7);
+            
+        
+
+        marker_c6bac79c185ea4f7481f1d1eea5f114a.bindPopup(popup_0195c4cce29339881125dff8506dfb2e)
+        ;
+
+        
+    
+    
+            var marker_051144fb4876b24b45e45bf9dd2352f4 = L.marker(
+                [34.1493, -118.3652],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_dbcc037f187a7685240a3fcebfec2e59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5336d89732372079c2a23e9d09d7b2d9 = $(`<div id="html_5336d89732372079c2a23e9d09d7b2d9" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)</div>`)[0];
+                popup_dbcc037f187a7685240a3fcebfec2e59.setContent(html_5336d89732372079c2a23e9d09d7b2d9);
+            
+        
+
+        marker_051144fb4876b24b45e45bf9dd2352f4.bindPopup(popup_dbcc037f187a7685240a3fcebfec2e59)
+        ;
+
+        
+    
+    
+            var marker_e229bd8833a63644fc439331b641b9a1 = L.marker(
+                [34.2428, -118.5338],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_f57f6c88125d9a1d78bf6d3d6b3b1ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68a533b25041894d2042c2ab9037bf2b = $(`<div id="html_68a533b25041894d2042c2ab9037bf2b" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_f57f6c88125d9a1d78bf6d3d6b3b1ef1.setContent(html_68a533b25041894d2042c2ab9037bf2b);
+            
+        
+
+        marker_e229bd8833a63644fc439331b641b9a1.bindPopup(popup_f57f6c88125d9a1d78bf6d3d6b3b1ef1)
+        ;
+
+        
+    
+    
+            var marker_b397c9ac777daf6399259cc77b9861a2 = L.marker(
+                [34.2048, -118.3738],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_34a375f2633f2948e2aa366d75f1742f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f58a010c738c4d56a9aa661c0869ae2a = $(`<div id="html_f58a010c738c4d56a9aa661c0869ae2a" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_34a375f2633f2948e2aa366d75f1742f.setContent(html_f58a010c738c4d56a9aa661c0869ae2a);
+            
+        
+
+        marker_b397c9ac777daf6399259cc77b9861a2.bindPopup(popup_34a375f2633f2948e2aa366d75f1742f)
+        ;
+
+        
+    
+    
+            var marker_a89349f6cd72f197f176008dc2bfb42d = L.marker(
+                [34.0257, -118.4156],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6d82881b30030be2d3689a399921edf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22976acbcaece2c45be84b0cfcf161d = $(`<div id="html_f22976acbcaece2c45be84b0cfcf161d" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)</div>`)[0];
+                popup_6d82881b30030be2d3689a399921edf6.setContent(html_f22976acbcaece2c45be84b0cfcf161d);
+            
+        
+
+        marker_a89349f6cd72f197f176008dc2bfb42d.bindPopup(popup_6d82881b30030be2d3689a399921edf6)
+        ;
+
+        
+    
+    
+            var marker_6708c1eb9a380f0f02693cb5f364ba17 = L.marker(
+                [34.1885, -118.3954],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_586a7ab7f47b0a123a8e33b1cd4d4eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1c7fb5323e640ab68fd69c75eee577e = $(`<div id="html_c1c7fb5323e640ab68fd69c75eee577e" style="width: 100.0%; height: 100.0%;">CONTEMPT OF COURT</div>`)[0];
+                popup_586a7ab7f47b0a123a8e33b1cd4d4eb3.setContent(html_c1c7fb5323e640ab68fd69c75eee577e);
+            
+        
+
+        marker_6708c1eb9a380f0f02693cb5f364ba17.bindPopup(popup_586a7ab7f47b0a123a8e33b1cd4d4eb3)
+        ;
+
+        
+    
+    
+            var marker_575c3bbf2341f93771dd828120906f2c = L.marker(
+                [33.9985, -118.4102],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_03f31c8cd4c3d18ce7a9f592bc67b711 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53e450af258eea354338e2ab668de139 = $(`<div id="html_53e450af258eea354338e2ab668de139" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_03f31c8cd4c3d18ce7a9f592bc67b711.setContent(html_53e450af258eea354338e2ab668de139);
+            
+        
+
+        marker_575c3bbf2341f93771dd828120906f2c.bindPopup(popup_03f31c8cd4c3d18ce7a9f592bc67b711)
+        ;
+
+        
+    
+    
+            var marker_73796863ebee2d5d5e5cf00719347690 = L.marker(
+                [34.0365, -118.2408],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_3dac8810f4063e3f04b41db1c0741511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a9d74d7803952a3e782173795a2866c = $(`<div id="html_8a9d74d7803952a3e782173795a2866c" style="width: 100.0%; height: 100.0%;">VANDALISM - MISDEAMEANOR ($399 OR UNDER)</div>`)[0];
+                popup_3dac8810f4063e3f04b41db1c0741511.setContent(html_8a9d74d7803952a3e782173795a2866c);
+            
+        
+
+        marker_73796863ebee2d5d5e5cf00719347690.bindPopup(popup_3dac8810f4063e3f04b41db1c0741511)
+        ;
+
+        
+    
+    
+            var marker_1f25e89fb75cc77eee0d1a905b9e2c85 = L.marker(
+                [34.0582, -118.2941],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_95ba4d8ce60e0d3a0baf84f0181141e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_065fbfda3e18654d6c7b35c6baa44230 = $(`<div id="html_065fbfda3e18654d6c7b35c6baa44230" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>`)[0];
+                popup_95ba4d8ce60e0d3a0baf84f0181141e5.setContent(html_065fbfda3e18654d6c7b35c6baa44230);
+            
+        
+
+        marker_1f25e89fb75cc77eee0d1a905b9e2c85.bindPopup(popup_95ba4d8ce60e0d3a0baf84f0181141e5)
+        ;
+
+        
+    
+    
+            var marker_8e5efdbd8ca0253123e8e0f77b212681 = L.marker(
+                [34.1866, -118.5535],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_2cb8788bb97b912243e53bd28e2f4d1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12747b3ce9f2f92810912fc131a20db2 = $(`<div id="html_12747b3ce9f2f92810912fc131a20db2" style="width: 100.0%; height: 100.0%;">ROBBERY</div>`)[0];
+                popup_2cb8788bb97b912243e53bd28e2f4d1b.setContent(html_12747b3ce9f2f92810912fc131a20db2);
+            
+        
+
+        marker_8e5efdbd8ca0253123e8e0f77b212681.bindPopup(popup_2cb8788bb97b912243e53bd28e2f4d1b)
+        ;
+
+        
+    
+    
+            var marker_33e613db3cb15c482f4d56b6394bf631 = L.marker(
+                [34.2717, -118.4096],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6f5384091a25eac39bb45b0dc62d1192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14888f8ea9ab2dae7ca886a6ad875bc0 = $(`<div id="html_14888f8ea9ab2dae7ca886a6ad875bc0" style="width: 100.0%; height: 100.0%;">BRANDISH WEAPON</div>`)[0];
+                popup_6f5384091a25eac39bb45b0dc62d1192.setContent(html_14888f8ea9ab2dae7ca886a6ad875bc0);
+            
+        
+
+        marker_33e613db3cb15c482f4d56b6394bf631.bindPopup(popup_6f5384091a25eac39bb45b0dc62d1192)
+        ;
+
+        
+    
+    
+            var marker_e056942f1cb4d86fbdaa4d8498ed0a02 = L.marker(
+                [34.0728, -118.2917],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_2926f40f3fb8316f1496d3f2f1109d03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e708775855858f5abb780926f831b9 = $(`<div id="html_04e708775855858f5abb780926f831b9" style="width: 100.0%; height: 100.0%;">VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)</div>`)[0];
+                popup_2926f40f3fb8316f1496d3f2f1109d03.setContent(html_04e708775855858f5abb780926f831b9);
+            
+        
+
+        marker_e056942f1cb4d86fbdaa4d8498ed0a02.bindPopup(popup_2926f40f3fb8316f1496d3f2f1109d03)
+        ;
+
+        
+    
+    
+            var marker_42f76f451af08e638e7efd13373a3f7a = L.marker(
+                [34.0396, -118.2558],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_929a0b5d4267ecb826f61029cf6f331b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d0ec6b276d171c2bc019760e92fe168 = $(`<div id="html_1d0ec6b276d171c2bc019760e92fe168" style="width: 100.0%; height: 100.0%;">THEFT, PERSON</div>`)[0];
+                popup_929a0b5d4267ecb826f61029cf6f331b.setContent(html_1d0ec6b276d171c2bc019760e92fe168);
+            
+        
+
+        marker_42f76f451af08e638e7efd13373a3f7a.bindPopup(popup_929a0b5d4267ecb826f61029cf6f331b)
+        ;
+
+        
+    
+    
+            var marker_d67934c14031450c2d9bcd672261155e = L.marker(
+                [33.9453, -118.3769],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_b8f5868c1f9161a18793a42ab55b3865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7bc739285eefb7df7c894cb5749174c = $(`<div id="html_a7bc739285eefb7df7c894cb5749174c" style="width: 100.0%; height: 100.0%;">DOCUMENT FORGERY / STOLEN FELONY</div>`)[0];
+                popup_b8f5868c1f9161a18793a42ab55b3865.setContent(html_a7bc739285eefb7df7c894cb5749174c);
+            
+        
+
+        marker_d67934c14031450c2d9bcd672261155e.bindPopup(popup_b8f5868c1f9161a18793a42ab55b3865)
+        ;
+
+        
+    
+    
+            var marker_e4b1d828563cfc78ffa861e3ba380535 = L.marker(
+                [34.058, -118.2715],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_905f3884bc2fa0b357bfe97eb564ad10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cd2fec2c60ef4ad69bb9185c1f6df48 = $(`<div id="html_1cd2fec2c60ef4ad69bb9185c1f6df48" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_905f3884bc2fa0b357bfe97eb564ad10.setContent(html_1cd2fec2c60ef4ad69bb9185c1f6df48);
+            
+        
+
+        marker_e4b1d828563cfc78ffa861e3ba380535.bindPopup(popup_905f3884bc2fa0b357bfe97eb564ad10)
+        ;
+
+        
+    
+    
+            var marker_282584bc3897bbf3d9dd240652c2bd14 = L.marker(
+                [34.0308, -118.2638],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_093a89b9baea0a08eac37c224375578c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f495dd7d72693bb8e1c7f75624eb65 = $(`<div id="html_d5f495dd7d72693bb8e1c7f75624eb65" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_093a89b9baea0a08eac37c224375578c.setContent(html_d5f495dd7d72693bb8e1c7f75624eb65);
+            
+        
+
+        marker_282584bc3897bbf3d9dd240652c2bd14.bindPopup(popup_093a89b9baea0a08eac37c224375578c)
+        ;
+
+        
+    
+    
+            var marker_7c30e8a004b9fed1234fe588ec491486 = L.marker(
+                [34.173, -118.5719],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_046dc0adfe5b6765c5d4110cd3e715fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01fc742641d4b0a0a6add3e40f799c17 = $(`<div id="html_01fc742641d4b0a0a6add3e40f799c17" style="width: 100.0%; height: 100.0%;">BUNCO, GRAND THEFT</div>`)[0];
+                popup_046dc0adfe5b6765c5d4110cd3e715fe.setContent(html_01fc742641d4b0a0a6add3e40f799c17);
+            
+        
+
+        marker_7c30e8a004b9fed1234fe588ec491486.bindPopup(popup_046dc0adfe5b6765c5d4110cd3e715fe)
+        ;
+
+        
+    
+    
+            var marker_0fec50de219555be4eec80ad87e3788d = L.marker(
+                [34.1723, -118.5659],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_3bd3f7830b2addd4e3e649775acf16a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62ee9b7b8cbf60d9f0fef25e787c0064 = $(`<div id="html_62ee9b7b8cbf60d9f0fef25e787c0064" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_3bd3f7830b2addd4e3e649775acf16a8.setContent(html_62ee9b7b8cbf60d9f0fef25e787c0064);
+            
+        
+
+        marker_0fec50de219555be4eec80ad87e3788d.bindPopup(popup_3bd3f7830b2addd4e3e649775acf16a8)
+        ;
+
+        
+    
+    
+            var marker_33636e99071a28c83f819411ecf16726 = L.marker(
+                [34.1323, -118.4612],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_2d212599d07bfe8a56f605a257ab8b0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd98dff3f98e135b6a01fc811ea11a6 = $(`<div id="html_bbd98dff3f98e135b6a01fc811ea11a6" style="width: 100.0%; height: 100.0%;">THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD</div>`)[0];
+                popup_2d212599d07bfe8a56f605a257ab8b0b.setContent(html_bbd98dff3f98e135b6a01fc811ea11a6);
+            
+        
+
+        marker_33636e99071a28c83f819411ecf16726.bindPopup(popup_2d212599d07bfe8a56f605a257ab8b0b)
+        ;
+
+        
+    
+    
+            var marker_27fb5468bada25e13c505c852c6b4fa4 = L.marker(
+                [34.0483, -118.372],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_1dcd05003234a76508ec61a076a9a349 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1470ab347de7261ddeaac8ef2f448c1d = $(`<div id="html_1470ab347de7261ddeaac8ef2f448c1d" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_1dcd05003234a76508ec61a076a9a349.setContent(html_1470ab347de7261ddeaac8ef2f448c1d);
+            
+        
+
+        marker_27fb5468bada25e13c505c852c6b4fa4.bindPopup(popup_1dcd05003234a76508ec61a076a9a349)
+        ;
+
+        
+    
+    
+            var marker_777aa3a0dc2b09b60845f3e6533ece6f = L.marker(
+                [33.9456, -118.3835],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_e71befe6bb632ad80a58faef37266e34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4efef5d4b3b18b509ecd0c0604e57677 = $(`<div id="html_4efef5d4b3b18b509ecd0c0604e57677" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_e71befe6bb632ad80a58faef37266e34.setContent(html_4efef5d4b3b18b509ecd0c0604e57677);
+            
+        
+
+        marker_777aa3a0dc2b09b60845f3e6533ece6f.bindPopup(popup_e71befe6bb632ad80a58faef37266e34)
+        ;
+
+        
+    
+    
+            var marker_101e8da2688bdbb245080654e6cfcf9e = L.marker(
+                [33.9431, -118.401],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_891ec818db406664cfbc3b649d6c11cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e678dbc1040029d2a3b7ee7eeda49bac = $(`<div id="html_e678dbc1040029d2a3b7ee7eeda49bac" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_891ec818db406664cfbc3b649d6c11cd.setContent(html_e678dbc1040029d2a3b7ee7eeda49bac);
+            
+        
+
+        marker_101e8da2688bdbb245080654e6cfcf9e.bindPopup(popup_891ec818db406664cfbc3b649d6c11cd)
+        ;
+
+        
+    
+    
+            var marker_8a5a2fae85c8c3e4b2ac53e4596427cd = L.marker(
+                [34.0544, -118.2767],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_4b6dcc445048b872a7efc2847a1b8d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4100064669ad445852a2305885f63f04 = $(`<div id="html_4100064669ad445852a2305885f63f04" style="width: 100.0%; height: 100.0%;">INTIMATE PARTNER - SIMPLE ASSAULT</div>`)[0];
+                popup_4b6dcc445048b872a7efc2847a1b8d49.setContent(html_4100064669ad445852a2305885f63f04);
+            
+        
+
+        marker_8a5a2fae85c8c3e4b2ac53e4596427cd.bindPopup(popup_4b6dcc445048b872a7efc2847a1b8d49)
+        ;
+
+        
+    
+    
+            var marker_e92d149c4d90dbc856bb93764b5a65df = L.marker(
+                [33.7244, -118.322],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6ddc68146d39655a284b167e07444dcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbd319357520fc453ac7ecc1668c8e55 = $(`<div id="html_dbd319357520fc453ac7ecc1668c8e55" style="width: 100.0%; height: 100.0%;">SHOPLIFTING-GRAND THEFT ($950.01 & OVER)</div>`)[0];
+                popup_6ddc68146d39655a284b167e07444dcf.setContent(html_dbd319357520fc453ac7ecc1668c8e55);
+            
+        
+
+        marker_e92d149c4d90dbc856bb93764b5a65df.bindPopup(popup_6ddc68146d39655a284b167e07444dcf)
+        ;
+
+        
+    
+    
+            var marker_e8ac644b34745b428fb7c791734ab856 = L.marker(
+                [34.1976, -118.4225],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_22a6a7b3a6d035b4d3b0ccabbb530d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a49976feffdd47dcbf6470bd4bd546 = $(`<div id="html_a3a49976feffdd47dcbf6470bd4bd546" style="width: 100.0%; height: 100.0%;">RAPE, FORCIBLE</div>`)[0];
+                popup_22a6a7b3a6d035b4d3b0ccabbb530d43.setContent(html_a3a49976feffdd47dcbf6470bd4bd546);
+            
+        
+
+        marker_e8ac644b34745b428fb7c791734ab856.bindPopup(popup_22a6a7b3a6d035b4d3b0ccabbb530d43)
+        ;
+
+        
+    
+    
+            var marker_0b65204231e5aead7e379f151ffbd0f3 = L.marker(
+                [34.0691, -118.2916],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_0c8baecf600cbe7224973d593be0ba2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f7861f1a4274987f1a386cba5da8d7 = $(`<div id="html_c6f7861f1a4274987f1a386cba5da8d7" style="width: 100.0%; height: 100.0%;">SHOPLIFTING - PETTY THEFT ($950 & UNDER)</div>`)[0];
+                popup_0c8baecf600cbe7224973d593be0ba2a.setContent(html_c6f7861f1a4274987f1a386cba5da8d7);
+            
+        
+
+        marker_0b65204231e5aead7e379f151ffbd0f3.bindPopup(popup_0c8baecf600cbe7224973d593be0ba2a)
+        ;
+
+        
+    
+    
+            var marker_ccc485322853532468d3eee500744120 = L.marker(
+                [34.1515, -118.4601],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_681f350c16d3484256ef5f52c4ac1b4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d66dc0bbbd219348f68fee1f39bc69e5 = $(`<div id="html_d66dc0bbbd219348f68fee1f39bc69e5" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_681f350c16d3484256ef5f52c4ac1b4d.setContent(html_d66dc0bbbd219348f68fee1f39bc69e5);
+            
+        
+
+        marker_ccc485322853532468d3eee500744120.bindPopup(popup_681f350c16d3484256ef5f52c4ac1b4d)
+        ;
+
+        
+    
+    
+            var marker_7eac628786756aabd26dd15b09af752a = L.marker(
+                [34.0589, -118.2821],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_757cf35397ce35027850d378e7833a52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_813f56c6a9f8146749945d617737f2f0 = $(`<div id="html_813f56c6a9f8146749945d617737f2f0" style="width: 100.0%; height: 100.0%;">ARSON</div>`)[0];
+                popup_757cf35397ce35027850d378e7833a52.setContent(html_813f56c6a9f8146749945d617737f2f0);
+            
+        
+
+        marker_7eac628786756aabd26dd15b09af752a.bindPopup(popup_757cf35397ce35027850d378e7833a52)
+        ;
+
+        
+    
+    
+            var marker_69644a06b5759fb8165e5ef1e81bb8f0 = L.marker(
+                [34.08, -118.2881],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_920be50740a5ffe08861c74d4d2f5f18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81208d28806a91c7e7875185589f5620 = $(`<div id="html_81208d28806a91c7e7875185589f5620" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>`)[0];
+                popup_920be50740a5ffe08861c74d4d2f5f18.setContent(html_81208d28806a91c7e7875185589f5620);
+            
+        
+
+        marker_69644a06b5759fb8165e5ef1e81bb8f0.bindPopup(popup_920be50740a5ffe08861c74d4d2f5f18)
+        ;
+
+        
+    
+    
+            var marker_1de6ebbde47166d288cfde80090ded19 = L.marker(
+                [33.9933, -118.3089],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_ffe04f5fe6d66f5e3af7b6febea6697e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47c64c1abfa676e8cf72fe83bc7c951f = $(`<div id="html_47c64c1abfa676e8cf72fe83bc7c951f" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_ffe04f5fe6d66f5e3af7b6febea6697e.setContent(html_47c64c1abfa676e8cf72fe83bc7c951f);
+            
+        
+
+        marker_1de6ebbde47166d288cfde80090ded19.bindPopup(popup_ffe04f5fe6d66f5e3af7b6febea6697e)
+        ;
+
+        
+    
+    
+            var marker_fd87be373d3ed5ec54c72d6513cc2d7d = L.marker(
+                [34.0726, -118.2578],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_bad5654fd85bb3295542bc3a3cbddf2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db7ca198cd5ac107a474c31ff2d924b1 = $(`<div id="html_db7ca198cd5ac107a474c31ff2d924b1" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_bad5654fd85bb3295542bc3a3cbddf2e.setContent(html_db7ca198cd5ac107a474c31ff2d924b1);
+            
+        
+
+        marker_fd87be373d3ed5ec54c72d6513cc2d7d.bindPopup(popup_bad5654fd85bb3295542bc3a3cbddf2e)
+        ;
+
+        
+    
+    
+            var marker_d04860bf612d5af00aca1598bdfed492 = L.marker(
+                [34.046, -118.2036],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_ad058848d75ea4df3a1defe8d2ea4cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3eb943d74beb6a921e1dd6de3fed224 = $(`<div id="html_a3eb943d74beb6a921e1dd6de3fed224" style="width: 100.0%; height: 100.0%;">ROBBERY</div>`)[0];
+                popup_ad058848d75ea4df3a1defe8d2ea4cb5.setContent(html_a3eb943d74beb6a921e1dd6de3fed224);
+            
+        
+
+        marker_d04860bf612d5af00aca1598bdfed492.bindPopup(popup_ad058848d75ea4df3a1defe8d2ea4cb5)
+        ;
+
+        
+    
+    
+            var marker_0530aebe4fb584c433f0164dc4031ad2 = L.marker(
+                [34.1704, -118.402],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_1cd4eb2ece473e3913020cf15f15d597 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f44315208a70b1848ef354858b750ec2 = $(`<div id="html_f44315208a70b1848ef354858b750ec2" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_1cd4eb2ece473e3913020cf15f15d597.setContent(html_f44315208a70b1848ef354858b750ec2);
+            
+        
+
+        marker_0530aebe4fb584c433f0164dc4031ad2.bindPopup(popup_1cd4eb2ece473e3913020cf15f15d597)
+        ;
+
+        
+    
+    
+            var marker_98e5410f9fa8e94578da72c268dc814b = L.marker(
+                [34.0524, -118.2214],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_42a79a0431d26528fa852cc2955e9249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_692b35201aa44283505215cad0a39e79 = $(`<div id="html_692b35201aa44283505215cad0a39e79" style="width: 100.0%; height: 100.0%;">EXTORTION</div>`)[0];
+                popup_42a79a0431d26528fa852cc2955e9249.setContent(html_692b35201aa44283505215cad0a39e79);
+            
+        
+
+        marker_98e5410f9fa8e94578da72c268dc814b.bindPopup(popup_42a79a0431d26528fa852cc2955e9249)
+        ;
+
+        
+    
+    
+            var marker_0e5a6b350f5106896cff8f284f13581e = L.marker(
+                [34.0344, -118.289],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_c7eee4a7074dd8e7fd557990ba7db538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e9555d781838e840ab8cb184525317a = $(`<div id="html_1e9555d781838e840ab8cb184525317a" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_c7eee4a7074dd8e7fd557990ba7db538.setContent(html_1e9555d781838e840ab8cb184525317a);
+            
+        
+
+        marker_0e5a6b350f5106896cff8f284f13581e.bindPopup(popup_c7eee4a7074dd8e7fd557990ba7db538)
+        ;
+
+        
+    
+    
+            var marker_d3e732ed4a658fc18ae1a87091f25034 = L.marker(
+                [33.9429, -118.403],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_dd465566f71f99ff0b01fc00aafd653b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e985bf9d2935a245b756a54bd4350380 = $(`<div id="html_e985bf9d2935a245b756a54bd4350380" style="width: 100.0%; height: 100.0%;">THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD</div>`)[0];
+                popup_dd465566f71f99ff0b01fc00aafd653b.setContent(html_e985bf9d2935a245b756a54bd4350380);
+            
+        
+
+        marker_d3e732ed4a658fc18ae1a87091f25034.bindPopup(popup_dd465566f71f99ff0b01fc00aafd653b)
+        ;
+
+        
+    
+    
+            var marker_4c3fa90ac3c8b0cc182114c5907ea63e = L.marker(
+                [34.0238, -118.284],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_92158bae8a1abc2b8da79fbd2e004bc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5c2f4ca418bde8b88ec6c7081e87977 = $(`<div id="html_f5c2f4ca418bde8b88ec6c7081e87977" style="width: 100.0%; height: 100.0%;">INTIMATE PARTNER - SIMPLE ASSAULT</div>`)[0];
+                popup_92158bae8a1abc2b8da79fbd2e004bc6.setContent(html_f5c2f4ca418bde8b88ec6c7081e87977);
+            
+        
+
+        marker_4c3fa90ac3c8b0cc182114c5907ea63e.bindPopup(popup_92158bae8a1abc2b8da79fbd2e004bc6)
+        ;
+
+        
+    
+    
+            var marker_4ff77a6849ac57b46399a9db9d758cf2 = L.marker(
+                [33.9923, -118.287],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_148cae5661e5672812f7d923e828302f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63c72573d3eeab925ab06b9294439805 = $(`<div id="html_63c72573d3eeab925ab06b9294439805" style="width: 100.0%; height: 100.0%;">CRIMINAL THREATS - NO WEAPON DISPLAYED</div>`)[0];
+                popup_148cae5661e5672812f7d923e828302f.setContent(html_63c72573d3eeab925ab06b9294439805);
+            
+        
+
+        marker_4ff77a6849ac57b46399a9db9d758cf2.bindPopup(popup_148cae5661e5672812f7d923e828302f)
+        ;
+
+        
+    
+    
+            var marker_a6e464169c524c2f7b94aff9ac5991a3 = L.marker(
+                [34.2573, -118.5361],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_a51a7143f9b4b91b02e7f802accce8e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbbe7c893007243fe3fa9706813f8b5e = $(`<div id="html_fbbe7c893007243fe3fa9706813f8b5e" style="width: 100.0%; height: 100.0%;">VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)</div>`)[0];
+                popup_a51a7143f9b4b91b02e7f802accce8e7.setContent(html_fbbe7c893007243fe3fa9706813f8b5e);
+            
+        
+
+        marker_a6e464169c524c2f7b94aff9ac5991a3.bindPopup(popup_a51a7143f9b4b91b02e7f802accce8e7)
+        ;
+
+        
+    
+    
+            var marker_4ffa26aa0d34d8bba9b5c0d91484c0f5 = L.marker(
+                [34.0474, -118.2496],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_e6bcccef22e1e33942bb8a5ec576e359 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13544b73bacbdd9af206a0ecb4f91a61 = $(`<div id="html_13544b73bacbdd9af206a0ecb4f91a61" style="width: 100.0%; height: 100.0%;">VANDALISM - MISDEAMEANOR ($399 OR UNDER)</div>`)[0];
+                popup_e6bcccef22e1e33942bb8a5ec576e359.setContent(html_13544b73bacbdd9af206a0ecb4f91a61);
+            
+        
+
+        marker_4ffa26aa0d34d8bba9b5c0d91484c0f5.bindPopup(popup_e6bcccef22e1e33942bb8a5ec576e359)
+        ;
+
+        
+    
+    
+            var marker_d4199ae66d8c2787a646fb2faeec3e21 = L.marker(
+                [34.2131, -118.4584],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_e4d0a8411309136a7820d38874a57d76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da772fb6c9d28173dcd3102a00a4dede = $(`<div id="html_da772fb6c9d28173dcd3102a00a4dede" style="width: 100.0%; height: 100.0%;">SHOPLIFTING - PETTY THEFT ($950 & UNDER)</div>`)[0];
+                popup_e4d0a8411309136a7820d38874a57d76.setContent(html_da772fb6c9d28173dcd3102a00a4dede);
+            
+        
+
+        marker_d4199ae66d8c2787a646fb2faeec3e21.bindPopup(popup_e4d0a8411309136a7820d38874a57d76)
+        ;
+
+        
+    
+    
+            var marker_0642842b9f9682c8f6bba0a4e958f704 = L.marker(
+                [34.1726, -118.5535],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_44438d7a1de300fc1bbabcab32b017a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edbdeab39ef1c9c14e39919f8eda43f5 = $(`<div id="html_edbdeab39ef1c9c14e39919f8eda43f5" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)</div>`)[0];
+                popup_44438d7a1de300fc1bbabcab32b017a0.setContent(html_edbdeab39ef1c9c14e39919f8eda43f5);
+            
+        
+
+        marker_0642842b9f9682c8f6bba0a4e958f704.bindPopup(popup_44438d7a1de300fc1bbabcab32b017a0)
+        ;
+
+        
+    
+    
+            var marker_694e44b8ea935afc584f3f82ada8bbd7 = L.marker(
+                [34.1426, -118.224],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_d97e09333fb020cb7b3237f7796b241e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0cea99856a66ca63df2cec770efde69 = $(`<div id="html_c0cea99856a66ca63df2cec770efde69" style="width: 100.0%; height: 100.0%;">THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD</div>`)[0];
+                popup_d97e09333fb020cb7b3237f7796b241e.setContent(html_c0cea99856a66ca63df2cec770efde69);
+            
+        
+
+        marker_694e44b8ea935afc584f3f82ada8bbd7.bindPopup(popup_d97e09333fb020cb7b3237f7796b241e)
+        ;
+
+        
+    
+    
+            var marker_4327257be2dd27c59703cfaca24e784b = L.marker(
+                [34.0275, -118.2875],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_9aea52987daffedf79904a232f3e6809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0b135cc2c637738a64dc85b1f82721f = $(`<div id="html_c0b135cc2c637738a64dc85b1f82721f" style="width: 100.0%; height: 100.0%;">THEFT PLAIN - PETTY ($950 & UNDER)</div>`)[0];
+                popup_9aea52987daffedf79904a232f3e6809.setContent(html_c0b135cc2c637738a64dc85b1f82721f);
+            
+        
+
+        marker_4327257be2dd27c59703cfaca24e784b.bindPopup(popup_9aea52987daffedf79904a232f3e6809)
+        ;
+
+        
+    
+    
+            var marker_a06c30a24ea6fa5daefcfd85464d39a7 = L.marker(
+                [34.2272, -118.432],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_2c24d6d76c9c14fbf0c8a846e8e6c3dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f42924961ae7efcf845df763d91f5519 = $(`<div id="html_f42924961ae7efcf845df763d91f5519" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_2c24d6d76c9c14fbf0c8a846e8e6c3dc.setContent(html_f42924961ae7efcf845df763d91f5519);
+            
+        
+
+        marker_a06c30a24ea6fa5daefcfd85464d39a7.bindPopup(popup_2c24d6d76c9c14fbf0c8a846e8e6c3dc)
+        ;
+
+        
+    
+    
+            var marker_4c47d0a3992171a8de5a12fb2464740e = L.marker(
+                [34.0313, -118.2505],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_7951e76ea7dd425061107952758d1384 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59676551fce3a87548e3d97763b9088d = $(`<div id="html_59676551fce3a87548e3d97763b9088d" style="width: 100.0%; height: 100.0%;">BURGLARY</div>`)[0];
+                popup_7951e76ea7dd425061107952758d1384.setContent(html_59676551fce3a87548e3d97763b9088d);
+            
+        
+
+        marker_4c47d0a3992171a8de5a12fb2464740e.bindPopup(popup_7951e76ea7dd425061107952758d1384)
+        ;
+
+        
+    
+    
+            var marker_a4e14eb1ae7b0d6c226f10fcd539b502 = L.marker(
+                [34.0482, -118.2326],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_479d38bb6777b62043922320dade99be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a9f253408e468a63c23c9fe8eba6f47 = $(`<div id="html_0a9f253408e468a63c23c9fe8eba6f47" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_479d38bb6777b62043922320dade99be.setContent(html_0a9f253408e468a63c23c9fe8eba6f47);
+            
+        
+
+        marker_a4e14eb1ae7b0d6c226f10fcd539b502.bindPopup(popup_479d38bb6777b62043922320dade99be)
+        ;
+
+        
+    
+    
+            var marker_e76ae4caf78ab18c6370c870dc262be5 = L.marker(
+                [33.9635, -118.2871],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_4282e17680f6c835f673ff44437fbd5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7df7772470a6ef075f8848a5126c1f75 = $(`<div id="html_7df7772470a6ef075f8848a5126c1f75" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_4282e17680f6c835f673ff44437fbd5a.setContent(html_7df7772470a6ef075f8848a5126c1f75);
+            
+        
+
+        marker_e76ae4caf78ab18c6370c870dc262be5.bindPopup(popup_4282e17680f6c835f673ff44437fbd5a)
+        ;
+
+        
+    
+    
+            var marker_83f50aab19ea268a5a86e52242846018 = L.marker(
+                [34.0258, -118.2797],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_b7e8651bd36fbbec70bc6661ccbc27a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efdb022a5acfb119e9da0c03dfb3b739 = $(`<div id="html_efdb022a5acfb119e9da0c03dfb3b739" style="width: 100.0%; height: 100.0%;">VEHICLE - ATTEMPT STOLEN</div>`)[0];
+                popup_b7e8651bd36fbbec70bc6661ccbc27a7.setContent(html_efdb022a5acfb119e9da0c03dfb3b739);
+            
+        
+
+        marker_83f50aab19ea268a5a86e52242846018.bindPopup(popup_b7e8651bd36fbbec70bc6661ccbc27a7)
+        ;
+
+        
+    
+    
+            var marker_fedca1000a91976ed9b92162c5f3ef37 = L.marker(
+                [34.0495, -118.3215],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_087a218e0890190e8d20e0291edddb22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26b3c9ad651ac189a28aa10d7f67000f = $(`<div id="html_26b3c9ad651ac189a28aa10d7f67000f" style="width: 100.0%; height: 100.0%;">THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD</div>`)[0];
+                popup_087a218e0890190e8d20e0291edddb22.setContent(html_26b3c9ad651ac189a28aa10d7f67000f);
+            
+        
+
+        marker_fedca1000a91976ed9b92162c5f3ef37.bindPopup(popup_087a218e0890190e8d20e0291edddb22)
+        ;
+
+        
+    
+    
+            var marker_c0668ef32f76e5b5f291d7277fccfe18 = L.marker(
+                [34.0817, -118.308],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_3001bd0243fae645a63c1b5221af9967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6844ba67abd5a61c83ae0e8a37d4d308 = $(`<div id="html_6844ba67abd5a61c83ae0e8a37d4d308" style="width: 100.0%; height: 100.0%;">VANDALISM - MISDEAMEANOR ($399 OR UNDER)</div>`)[0];
+                popup_3001bd0243fae645a63c1b5221af9967.setContent(html_6844ba67abd5a61c83ae0e8a37d4d308);
+            
+        
+
+        marker_c0668ef32f76e5b5f291d7277fccfe18.bindPopup(popup_3001bd0243fae645a63c1b5221af9967)
+        ;
+
+        
+    
+    
+            var marker_97f8daef899e89c1f9a7ff7b20f4db83 = L.marker(
+                [34.118, -118.4429],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_c64bcdb0caf7b4a8b500f6880929faf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_960d04b97219f682d91afb0e40c0e50f = $(`<div id="html_960d04b97219f682d91afb0e40c0e50f" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_c64bcdb0caf7b4a8b500f6880929faf8.setContent(html_960d04b97219f682d91afb0e40c0e50f);
+            
+        
+
+        marker_97f8daef899e89c1f9a7ff7b20f4db83.bindPopup(popup_c64bcdb0caf7b4a8b500f6880929faf8)
+        ;
+
+        
+    
+    
+            var marker_0aae3360a39460d516e72cdee9814e44 = L.marker(
+                [33.9399, -118.2826],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_6bd3b85eb20974d80e918beaf24bf96d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c2c6034fd5fd6eddf9543df212dd2be = $(`<div id="html_5c2c6034fd5fd6eddf9543df212dd2be" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_6bd3b85eb20974d80e918beaf24bf96d.setContent(html_5c2c6034fd5fd6eddf9543df212dd2be);
+            
+        
+
+        marker_0aae3360a39460d516e72cdee9814e44.bindPopup(popup_6bd3b85eb20974d80e918beaf24bf96d)
+        ;
+
+        
+    
+    
+            var marker_2f4fd1ac83260b9d07aab7a0580d2f4b = L.marker(
+                [34.214, -118.5667],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_4cb0984775edb925ca07e62ed66e5ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0afaf40f95671daaddb77ea6d38b898 = $(`<div id="html_c0afaf40f95671daaddb77ea6d38b898" style="width: 100.0%; height: 100.0%;">THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)</div>`)[0];
+                popup_4cb0984775edb925ca07e62ed66e5ad2.setContent(html_c0afaf40f95671daaddb77ea6d38b898);
+            
+        
+
+        marker_2f4fd1ac83260b9d07aab7a0580d2f4b.bindPopup(popup_4cb0984775edb925ca07e62ed66e5ad2)
+        ;
+
+        
+    
+    
+            var marker_2d816b6b9ae43f236091358621f6e68e = L.marker(
+                [34.0014, -118.4678],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_b039f9f9844fff4ca272d2c822cdcf04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51607136ae55ed80643da2769b0124dd = $(`<div id="html_51607136ae55ed80643da2769b0124dd" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>`)[0];
+                popup_b039f9f9844fff4ca272d2c822cdcf04.setContent(html_51607136ae55ed80643da2769b0124dd);
+            
+        
+
+        marker_2d816b6b9ae43f236091358621f6e68e.bindPopup(popup_b039f9f9844fff4ca272d2c822cdcf04)
+        ;
+
+        
+    
+    
+            var marker_e14cc42d39fc28e50081d6e45e79da6d = L.marker(
+                [34.2047, -118.5491],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_e7da023d31ff90cec075416499cc125f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d937460805a0f63b7b0b0d3b18d62440 = $(`<div id="html_d937460805a0f63b7b0b0d3b18d62440" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_e7da023d31ff90cec075416499cc125f.setContent(html_d937460805a0f63b7b0b0d3b18d62440);
+            
+        
+
+        marker_e14cc42d39fc28e50081d6e45e79da6d.bindPopup(popup_e7da023d31ff90cec075416499cc125f)
+        ;
+
+        
+    
+    
+            var marker_402153f5f704b0846ea832c9b3bfa81a = L.marker(
+                [34.1564, -118.463],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_eb6fa34693b57cd9f4d9f5e1b2c5ff7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f63b3a78af41505c9d708f261b8ed5 = $(`<div id="html_c7f63b3a78af41505c9d708f261b8ed5" style="width: 100.0%; height: 100.0%;">COUNTERFEIT</div>`)[0];
+                popup_eb6fa34693b57cd9f4d9f5e1b2c5ff7e.setContent(html_c7f63b3a78af41505c9d708f261b8ed5);
+            
+        
+
+        marker_402153f5f704b0846ea832c9b3bfa81a.bindPopup(popup_eb6fa34693b57cd9f4d9f5e1b2c5ff7e)
+        ;
+
+        
+    
+    
+            var marker_cd68d47b07e4ff54fe5c3efe341fabc6 = L.marker(
+                [34.1016, -118.3387],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_e01b3321043eb60505a12a6db613e242 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44fa94beb2ac6206de8ce6df310d9fb1 = $(`<div id="html_44fa94beb2ac6206de8ce6df310d9fb1" style="width: 100.0%; height: 100.0%;">BURGLARY FROM VEHICLE</div>`)[0];
+                popup_e01b3321043eb60505a12a6db613e242.setContent(html_44fa94beb2ac6206de8ce6df310d9fb1);
+            
+        
+
+        marker_cd68d47b07e4ff54fe5c3efe341fabc6.bindPopup(popup_e01b3321043eb60505a12a6db613e242)
+        ;
+
+        
+    
+    
+            var marker_4d46e81f616e5eebaae31c0dd9f74ac6 = L.marker(
+                [34.3086, -118.5028],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_1195e8557a3af8dd83cf81e10cbd4849 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_389b8ce7565ac20b6cfff79876b82dd5 = $(`<div id="html_389b8ce7565ac20b6cfff79876b82dd5" style="width: 100.0%; height: 100.0%;">VEHICLE - STOLEN</div>`)[0];
+                popup_1195e8557a3af8dd83cf81e10cbd4849.setContent(html_389b8ce7565ac20b6cfff79876b82dd5);
+            
+        
+
+        marker_4d46e81f616e5eebaae31c0dd9f74ac6.bindPopup(popup_1195e8557a3af8dd83cf81e10cbd4849)
+        ;
+
+        
+    
+    
+            var marker_03292249f509364081f136b0f831eb3b = L.marker(
+                [34.3105, -118.4067],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_146fb9cf1dda1ae5184ea6ea0e024f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1263a7a5722023971143677526668295 = $(`<div id="html_1263a7a5722023971143677526668295" style="width: 100.0%; height: 100.0%;">CHILD ABUSE (PHYSICAL) - SIMPLE ASSAULT</div>`)[0];
+                popup_146fb9cf1dda1ae5184ea6ea0e024f8c.setContent(html_1263a7a5722023971143677526668295);
+            
+        
+
+        marker_03292249f509364081f136b0f831eb3b.bindPopup(popup_146fb9cf1dda1ae5184ea6ea0e024f8c)
+        ;
+
+        
+    
+    
+            var marker_53001017864a47ab89042adc146f78e1 = L.marker(
+                [34.0512, -118.2025],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_63d32526969e3074f98b860fbec35457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04322c94d0f525375fe323b24fe36a54 = $(`<div id="html_04322c94d0f525375fe323b24fe36a54" style="width: 100.0%; height: 100.0%;">THEFT OF IDENTITY</div>`)[0];
+                popup_63d32526969e3074f98b860fbec35457.setContent(html_04322c94d0f525375fe323b24fe36a54);
+            
+        
+
+        marker_53001017864a47ab89042adc146f78e1.bindPopup(popup_63d32526969e3074f98b860fbec35457)
+        ;
+
+        
+    
+    
+            var marker_4bcff5bc82e50ebe04883d54eadd8da7 = L.marker(
+                [34.1211, -118.2048],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_a7188a979cdd643aad61fd12fa2192b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9faeb984c9046114967e2133116f1e61 = $(`<div id="html_9faeb984c9046114967e2133116f1e61" style="width: 100.0%; height: 100.0%;">THEFT PLAIN - PETTY ($950 & UNDER)</div>`)[0];
+                popup_a7188a979cdd643aad61fd12fa2192b2.setContent(html_9faeb984c9046114967e2133116f1e61);
+            
+        
+
+        marker_4bcff5bc82e50ebe04883d54eadd8da7.bindPopup(popup_a7188a979cdd643aad61fd12fa2192b2)
+        ;
+
+        
+    
+    
+            var marker_cc5db74e9153366e219a80ccc5222cd7 = L.marker(
+                [34.1867, -118.4574],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_a34ab8dd15ca5051adbfd95e59063877 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20b026b147b48ceaeb0fd7345a964a95 = $(`<div id="html_20b026b147b48ceaeb0fd7345a964a95" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>`)[0];
+                popup_a34ab8dd15ca5051adbfd95e59063877.setContent(html_20b026b147b48ceaeb0fd7345a964a95);
+            
+        
+
+        marker_cc5db74e9153366e219a80ccc5222cd7.bindPopup(popup_a34ab8dd15ca5051adbfd95e59063877)
+        ;
+
+        
+    
+    
+            var marker_3da6d364ec39d1a069431a4664a35ded = L.marker(
+                [33.9873, -118.3216],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_788804898cc3b31f1756b267d17b2005 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_496c9dc90b6dd8f210087f0a71adb55a = $(`<div id="html_496c9dc90b6dd8f210087f0a71adb55a" style="width: 100.0%; height: 100.0%;">RAPE, FORCIBLE</div>`)[0];
+                popup_788804898cc3b31f1756b267d17b2005.setContent(html_496c9dc90b6dd8f210087f0a71adb55a);
+            
+        
+
+        marker_3da6d364ec39d1a069431a4664a35ded.bindPopup(popup_788804898cc3b31f1756b267d17b2005)
+        ;
+
+        
+    
+    
+            var marker_7d0c99942c10adaf5c08037db45787d3 = L.marker(
+                [34.1867, -118.39],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_375bff16711874a34a05d207b036433d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6d8990ccab45c0fd2bbd7a7374a40d7 = $(`<div id="html_c6d8990ccab45c0fd2bbd7a7374a40d7" style="width: 100.0%; height: 100.0%;">BRANDISH WEAPON</div>`)[0];
+                popup_375bff16711874a34a05d207b036433d.setContent(html_c6d8990ccab45c0fd2bbd7a7374a40d7);
+            
+        
+
+        marker_7d0c99942c10adaf5c08037db45787d3.bindPopup(popup_375bff16711874a34a05d207b036433d)
+        ;
+
+        
+    
+    
+            var marker_32a8c13094eb7ef37052e350f4498ada = L.marker(
+                [34.1413, -118.361],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_dab50a19f72dd96dc5256a052486e546 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc4539a5c30a99bf843fd8e8b847134 = $(`<div id="html_7bc4539a5c30a99bf843fd8e8b847134" style="width: 100.0%; height: 100.0%;">VANDALISM - MISDEAMEANOR ($399 OR UNDER)</div>`)[0];
+                popup_dab50a19f72dd96dc5256a052486e546.setContent(html_7bc4539a5c30a99bf843fd8e8b847134);
+            
+        
+
+        marker_32a8c13094eb7ef37052e350f4498ada.bindPopup(popup_dab50a19f72dd96dc5256a052486e546)
+        ;
+
+        
+    
+    
+            var marker_6938c975814579c15755451cb2758581 = L.marker(
+                [34.2291, -118.5779],
+                {}
+            ).addTo(map_0c231987c77b1462a4a2561664111261);
+        
+    
+        var popup_fd85c7b4508e557094b1b2edefd7252c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c9940a89231fd6722e689a877af89cb = $(`<div id="html_8c9940a89231fd6722e689a877af89cb" style="width: 100.0%; height: 100.0%;">BRANDISH WEAPON</div>`)[0];
+                popup_fd85c7b4508e557094b1b2edefd7252c.setContent(html_8c9940a89231fd6722e689a877af89cb);
+            
+        
+
+        marker_6938c975814579c15755451cb2758581.bindPopup(popup_fd85c7b4508e557094b1b2edefd7252c)
+        ;
+
+        
+    
+</script>
+</html>
